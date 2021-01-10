@@ -3,5 +3,5 @@ A mobile-first, responsive, toggleable navigation bar using pure Javascript. Bas
 
 This will be used for my website, and is somewhere for me to document my learning, as I've had very little experience working with Javascript.
 
-**Last update @ 2021-01-10:**
-I've managed to get this navigation functional enough with my design. The next step is to get the Javascript to toggle the box shadow on and off depending on the screen size. I also need to play with the CSS to get the design how I intended it to be.
+**Last update @ 2021-01-10:**<br />
+It turns out that I didn't need to add to the JS at all; my HTML was structured badly. HTML structure has been corrected, and the navigation now functions correctly with most of what I intended for the design.The next step is to modify the CSS to improve the design.
