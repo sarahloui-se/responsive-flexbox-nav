@@ -87,15 +87,11 @@ main {
 	align-items: center;
 }
 
-.toggle,
 .boxshadow {
 	background: white;
+	box-shadow: 4px 4px 7px rgba(30,30,30,0.6);
 	width: 66.5%;
-}
-
-.toggle {
 	margin-top: 2em;
-/*	box-shadow: 4px 4px 7px rgba(30,30,30,0.6);*/
 }
 
 .notyet {
@@ -111,24 +107,11 @@ main {
     align-items: center;
 }
 
-.toggle {
-	order: 1;
-}
-
-.boxshadow {
-	order: 2;
-	box-shadow: 0;
-}
-
-/*.boxshadow .active {
-	box-shadow: 4px 4px 7px rgba(30,30,30,0.6);
-}*/
-
 .item {
     text-align: center;
     display: none;
-	order: 3;
 }
+
 .active .item {
     display: block;
 }
@@ -142,18 +125,11 @@ main {
 @media all and (min-width: 60em) {
     .menu {
 		flex-direction: row;
-        align-items: center;     
-        flex-wrap: nowrap;
     }
 
     .item {
 		display: inline-block;
-        order: 1;
     }
-
-	.boxshadow {
-	box-shadow: 4px 4px 7px rgba(30,30,30,0.6);
-}
 
     .toggle {
         display: none;
