@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-au">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Navigation with Flexbox</title>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<link href="css/responsive-nav-flex.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/d4cd6bdb04.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul class="menu">
+				<li class="logo"><a href="#"><h1 aria-label="Sarah Louise: the dot is silent"><span class="blue">Sarah</span><span class="green">Loui</span><span class="yellow">.</span><span class="green">se</span><br><span class="fontreset">(the dot is silent)</span></h1></a></li>
+				<div class="boxshadow">
+				<li class="item"><a href="#">Portfolio</a></li>
+				<li class="item notyet" aria-label="Resume is not yet available">Resume</li>
+				<li class="item"><a href="#">About</a></li>
+				<li class="item notyet" aria-label="Blog is not yet available">Blog</li>
+				<li class="item"><a href="#">Contact</a></li>
+				</div>
+				<li class="toggle" aria-labelledby="Menu"><a href="#"><span class="fas fa-bars"></span></a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Responsive Navigation with Flexbox</h1>
+		<p>The above is a mobile-first, responsive, toggleable navigation bar using pure Javascript, based on a <a href="https://webdesign.tutsplus.com/tutorials/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535" target="_blank">tutorial from Envato Tuts+</a>.</p>
+		<p>I've managed to get this navigation functional enough with my design. The next step is to get the Javascript to toggle the box shadow on and off depending on the screen size. I also need to play with the CSS to get the design how I intended it to be.</p>
+	</main>	
+	<script src="js/menu.js"></script>
+</body>
+</html> 

@@ -1,0 +1,161 @@
+/*Imports*/
+@font-face {
+  font-family: Jellee-Bold;
+  src: url('../fonts/jellee-bold.woff2') format('woff2'), 
+    url('../fonts/jellee-bold.woff') format('woff');
+}
+
+/* Reset */
+* {
+	margin: 0; padding: 0; /* should strip out when ready to finalise */
+}
+
+/*Basics*/
+html {
+	font-size: 16px;
+	text-rendering: optimizeLegibility;
+	height: 100%; /* to get yellow bg layer to viewport bottom */
+	box-sizing: border-box; /* accounts for any border and padding in the values you specify for an element's width and height */ 
+}
+
+body {
+	background: rgb(0,90,143);
+	background: /*yellow*/     linear-gradient(to bottom, transparent 52.5%, rgba(235,188,0,1) 95%),
+				/*bluegreen*/   linear-gradient(to right, rgba(0,90,143,1) 40%, rgba(0,102,48,1) 60%);
+	background-attachment:fixed;
+	font-family: 'Oswald', sans-serif;
+	display: flex;
+	flex-direction: column;
+	color: #242424; /*charcoal*/
+}
+
+header {
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 4em;
+}
+
+main {
+	background: white;
+	box-shadow: 4px 4px 7px rgba(30,30,30,0.6);
+	width: 66.5%;
+	margin: 0 auto;
+	padding: 1.5em;
+}
+
+/*Logo*/
+.logo {
+	font-family: Jellee-Bold, sans-serif;
+	text-transform: lowercase;
+	text-decoration: none;
+	background: white;
+	box-shadow: 4px 4px 7px rgba(30,30,30,0.6);
+	padding: 1.5em;
+}
+
+.logo h1 {
+	font-size: 2.3em;
+	line-height: 0.6em;
+	letter-spacing: -0.04em;
+}
+
+.blue {color:#005A8F;}
+.green {color:#006630;}
+.yellow {
+	color:#EBBC00;
+	font-size: 0.75em;
+}
+
+.fontreset {
+	font-family: 'Oswald', sans-serif;
+	font-size: 0.6em;
+	letter-spacing: -0.03em;
+	word-spacing: 0.05em;
+	font-weight: 300;
+	color: #242424;
+}
+
+.logo a {
+	text-decoration: none;
+}
+
+/*Navigation*/
+.menu {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.toggle,
+.boxshadow {
+	background: white;
+	width: 66.5%;
+}
+
+.toggle {
+	margin-top: 2em;
+/*	box-shadow: 4px 4px 7px rgba(30,30,30,0.6);*/
+}
+
+.notyet {
+	color: #595959;
+	text-decoration: line-through;
+}
+
+/* Mobile menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+	order: 1;
+}
+
+.boxshadow {
+	order: 2;
+	box-shadow: 0;
+}
+
+/*.boxshadow .active {
+	box-shadow: 4px 4px 7px rgba(30,30,30,0.6);
+}*/
+
+.item {
+    text-align: center;
+    display: none;
+	order: 3;
+}
+.active .item {
+    display: block;
+}
+
+.menu li a {
+    display: block;
+    padding: 1em;
+}
+
+/* Desktop menu */
+@media all and (min-width: 60em) {
+    .menu {
+		flex-direction: row;
+        align-items: center;     
+        flex-wrap: nowrap;
+    }
+
+    .item {
+		display: inline-block;
+        order: 1;
+    }
+
+	.boxshadow {
+	box-shadow: 4px 4px 7px rgba(30,30,30,0.6);
+}
+
+    .toggle {
+        display: none;
+    }
+}
