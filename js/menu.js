@@ -1,8 +1,6 @@
-/* To-Do: get add box shadow to drop down menu */
-const toggle = document.querySelector(".toggle");
+const toggle = document.querySelector(".toggle"); // Define CSS class .toggle as a constant named toggle
 const menu = document.querySelector(".menu");
-const boxshadow = document.querySelector(".boxshadow"); /* Define boxshadow as a constant, using the .boxshadow CSS class */
- 
+
 /* Toggle mobile menu */
 function toggleMenu() {
     if (menu.classList.contains("active")) {
@@ -17,6 +15,6 @@ function toggleMenu() {
         toggle.querySelector("a").innerHTML = "<span class='fas fa-times'></span>";
     }
 }
- 
+
 /* Event Listeners */
 toggle.addEventListener("click", toggleMenu, false);
